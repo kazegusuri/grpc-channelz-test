@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package kazegusuri.test;
+
+option go_package = "pb";
+
+service Echo {
+  rpc Echo(EchoMessage) returns (EchoMessage) {};
+}
+
+message EchoMessage {
+  string message   = 1;
+}
